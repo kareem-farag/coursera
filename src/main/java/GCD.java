@@ -16,19 +16,19 @@ public class GCD {
         double result = (Double.valueOf(firstInt) / Double.valueOf(secondInt));
 
         result = (result - Math.floor(result)) * secondInt;
-
-
         firstInt = secondInt;
         secondInt = (int) Math.round(result);
         System.out.println(firstInt + "-" + secondInt);
         if (secondInt == 0) {
+            System.out.println(firstInt);
+            System.exit(0);
             return firstInt;
         } else {
             getGCD(firstInt, secondInt);
+            return secondInt;
 
         }
-        return firstInt;
-// 1653264 - 3918848
+
 
     }
 }
