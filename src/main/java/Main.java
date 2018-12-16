@@ -6,6 +6,7 @@ public class Main {
         int n = in.nextInt();
 
 
+
         System.out.println(getFib(n));
 
     }
